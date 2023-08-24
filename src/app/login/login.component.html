@@ -1,0 +1,16 @@
+
+<body>
+  <h1>Login</h1>
+
+  <label class="blue-label">Email</label>
+  <input [(ngModel)]="email" type="email" class="blue-input">
+  <br>
+  <label class="blue-label">Contraseña</label>
+  <input [(ngModel)]="password" type="password" class="blue-input">
+  <br>
+  <button (click)="jija()" routerLink="login" class="blue-button">Enviar</button>
+  <br>
+  <button (click)="redirectToHome()" class="blue-button">No tienes cuenta?</button>
+</body>
+
+

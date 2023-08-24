@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+
+  h1, h2 {
+    color: blue;
+  }
+
+  .blue-label {
+    color: blue;
+  }
+
+  .blue-input {
+    border: 1px solid blue;
+    padding: 5px;
+    border-radius: 3px;
+  }
+
+  .blue-button {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 3px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+  }
+.blue-label {
+    color: blue;
+  }
+  
+  .blue-input {
+    border: 1px solid blue;
+    padding: 5px;
+    border-radius: 3px;
+  }
+  
+  .blue-button {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 3px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+  }
+
+  
+  
