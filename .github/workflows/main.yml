@@ -1,0 +1,26 @@
+name: pushear a dockerhub
+
+on:
+  pull_request:
+    types:
+      - closed
+    branches:
+      - main
+      - desarrollo
+
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: checkout
+      uses: actions/checkout@v2
+      
+    - name: buildear
+      run: docker build -t pichonga/selenium-jazu:${{ github.sha }} .
+      
+    - name: logear
+      run: docker login -u pichonga -p ${{ secrets.DOCKERHUB_TOKEN }}
+      
+    - name: pushear
+      run: docker push pichonga/selenium-jazu:${{ github.sha }}
